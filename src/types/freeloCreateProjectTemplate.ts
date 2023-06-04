@@ -1,4 +1,4 @@
-import { FreeloApiResponse } from "./types";
+import { FreeloApiResponse, FreeloInstanceType } from "./types";
 
 export interface FreeloCreateProjectFromTemplateResponse {
   id: number;
@@ -11,6 +11,7 @@ export interface FreeloCreateProjectFromTemplateResponse {
 }
 
 export type FreeloCreateProjectFromTemplate = (
+  instance: FreeloInstanceType,
   templateId: string | null | undefined,
   name: string
 ) => Promise<

@@ -1,7 +1,7 @@
 {
   "name": "freelo-api-sdkjs",
   "license": "MIT",
-  "version": "0.0.10",
+  "version": "0.0.101",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -9,7 +9,10 @@
     "dev": "tsx watch index.ts",
     "build": "tsup index.ts --format cjs,esm --dts",
     "release": "pnpm run build && changeset publish",
-    "lint": "tsc"
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore .",
+    "lint": "tsc",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
@@ -23,7 +26,8 @@
     "prettier": "^2.8.8",
     "tsup": "^6.7.0",
     "tsx": "^3.12.7",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "husky": "^8.0.0"
   },
   "engines": {
     "node": ">=16"

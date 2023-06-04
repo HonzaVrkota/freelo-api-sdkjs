@@ -22,9 +22,6 @@ const freeloApiV1 = {
 };
 
 export const freeloApiInit = (username: string, apiKey: string) => {
-  if (!username || !apiKey) {
-    throw new Error("Missing username or api key for freelo api.");
-  }
   const instance = axios.create({
     baseURL: freeloApiV1.url,
     auth: {
@@ -41,6 +38,7 @@ export const freeloApiInit = (username: string, apiKey: string) => {
    * @return {Promise<FreeloCreateProjectFromTemplateResponse>} - response from freelo
    */
   const createProjectFromTemplate: FreeloCreateProjectFromTemplate = async (
+    instance,
     templateId,
     name
   ) => {
@@ -50,7 +48,7 @@ export const freeloApiInit = (username: string, apiKey: string) => {
     try {
       const response =
         await instance.post<FreeloCreateProjectFromTemplateResponse>(
-          freeloApiV1.routes.createProjectFromTemplate + templateId,
+          "/project/create-from-template/" + templateId,
           {
             name: name,
           }
