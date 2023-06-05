@@ -8,6 +8,22 @@ export interface FreeloApiResponse {
 
 export type Currency = "CZK" | "EUR" | "USD";
 export type Order = "asc" | "desc" | null;
-export type OrderBy = "name" | "date_add" | "date_edited_at" | null;
+export type OrderByProjects = "name" | "date_add" | "date_edited_at" | null;
 
 export type FreeloInstanceType = AxiosInstance;
+
+export type ApiRouteType<P, R> = ({
+  args,
+  instance,
+}: {
+  instance: FreeloInstanceType;
+  args: P;
+}) => Promise<R>;
+
+export interface ApiResponseData<T> extends FreeloApiResponse {
+  data: T | null;
+}
+
+export type ApiRoute<P, R, I> = (
+  props: I extends true ? P : Omit<P, "instance">
+) => Promise<R>;

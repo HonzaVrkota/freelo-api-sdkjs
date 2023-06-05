@@ -1,7 +1,7 @@
 {
   "name": "freelo-api-sdkjs",
   "license": "MIT",
-  "version": "0.0.101",
+  "version": "0.0.102",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -23,16 +23,17 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
     "prettier": "^2.8.8",
     "tsup": "^6.7.0",
     "tsx": "^3.12.7",
-    "typescript": "^4.9.5",
-    "husky": "^8.0.0"
+    "typescript": "^4.9.5"
   },
   "engines": {
     "node": ">=16"
   },
   "dependencies": {
-    "axios": "^1.4.0"
+    "axios": "^1.4.0",
+    "dotenv": "^16.1.4"
   }
 }

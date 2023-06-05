@@ -1,4 +1,4 @@
-import { FreeloApiResponse, OrderBy, Order } from "../../types";
+import { FreeloApiResponse, OrderByProjects, Order } from "../../types";
 
 export interface FreeloCollectionUsersResponse {
   total: number;
@@ -28,7 +28,7 @@ export interface FreeloCollectionUsersResponse {
 export type FreeloCollectionUsers = (
   user_id: number,
   states_ids?: number[],
-  order_by?: OrderBy,
+  order_by?: OrderByProjects,
   order?: Order
 ) => Promise<
   FreeloApiResponse & {
