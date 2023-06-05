@@ -1,13 +1,13 @@
-import { FreeloApiResponse, FreeloInstanceType } from "./types";
+import { Currency, FreeloApiResponse, FreeloInstanceType } from "../types";
 
 export interface FreeloCreateProjectFromTemplateResponse {
   id: number;
   name: string;
-  owener: {
+  owner: {
     id: string;
     fullname: string;
   };
-  currency_iso: string;
+  currency_iso: Currency;
 }
 
 export type FreeloCreateProjectFromTemplate = (

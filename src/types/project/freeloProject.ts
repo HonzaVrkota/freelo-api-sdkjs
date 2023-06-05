@@ -1,4 +1,4 @@
-import { FreeloApiResponse } from "./types";
+import { FreeloApiResponse } from "../types";
 
 export interface FreeloGetProjectResponse {
   id: number;

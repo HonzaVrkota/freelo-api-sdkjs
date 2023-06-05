@@ -1,4 +1,4 @@
-import { FreeloApiResponse } from "./types";
+import { FreeloApiResponse } from "../types";
 
 export interface FreeloCreateCommentResponse {
   id: number;
