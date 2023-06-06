@@ -2,7 +2,7 @@
   "name": "freelo-api-sdkjs",
   "description": "Freelo API SDK for Node.js",
   "license": "MIT",
-  "version": "0.0.104",
+  "version": "0.0.105",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
