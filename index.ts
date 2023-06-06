@@ -1,4 +1,5 @@
 import { freeloApiInit } from "./src/freeloApiInit";
+export * from "./src/types/types";
 export default freeloApiInit;
 
 import "dotenv/config";

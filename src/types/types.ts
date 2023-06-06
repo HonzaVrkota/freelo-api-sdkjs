@@ -27,3 +27,8 @@ export interface ApiResponseData<T> extends FreeloApiResponse {
 export type ApiRoute<P, R, I> = (
   props: I extends true ? P : Omit<P, "instance">
 ) => Promise<R>;
+
+// Export types from modules
+export * from "../routes/project/types";
+export * from "../routes/tasklists/types";
+export * from "../routes/tasks/types";
