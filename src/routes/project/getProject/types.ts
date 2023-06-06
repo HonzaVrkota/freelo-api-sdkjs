@@ -1,7 +1,6 @@
 import {
   ApiResponseData,
   ApiRoute,
-  FreeloApiResponse,
   FreeloInstanceType,
 } from "../../../types/types";
 

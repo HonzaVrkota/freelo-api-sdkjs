@@ -1,6 +1,13 @@
 import { AxiosError } from "axios";
 import { GetProjectType, GetProjectResponse } from "./types";
 
+/**
+ * Get project from freelo by ID
+ *
+ * @param {GetProjectProps} props
+ * @return {Promise<GetProjectData>}
+ * @see {@link https://freelo.docs.apiary.io/#reference/projects/project/get-project}
+ */
 export const getProjectApi: GetProjectType<true> = async ({
   projectID,
   instance,
