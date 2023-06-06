@@ -1,5 +1,11 @@
 # freelo-api-sdkjs
 
+## 0.0.104
+
+### Patch Changes
+
+- a2d3362: Package.json type=module
+
 ## 0.0.103
 
 ### Patch Changes
