@@ -1,5 +1,11 @@
 # freelo-api-sdkjs
 
+## 0.0.105
+
+### Patch Changes
+
+- 56b3781: export all types from lib, tsup.config.ts, minify code
+
 ## 0.0.104
 
 ### Patch Changes
