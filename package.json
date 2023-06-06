@@ -1,7 +1,7 @@
 {
   "name": "freelo-api-sdkjs",
   "license": "MIT",
-  "version": "0.0.103",
+  "version": "0.0.104",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
